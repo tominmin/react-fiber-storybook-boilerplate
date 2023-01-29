@@ -2,10 +2,10 @@ import { useFrame, Vector3 } from '@react-three/fiber';
 import { useRef } from 'react';
 
 type Props = {
-  position: Vector3;
+  position?: Vector3;
 };
 
-const Box: React.FC<Props> = (props: Props) => {
+const Box: React.FC<Props> = ({ position = [0, 0, 0] }) => {
   const ref = useRef<THREE.Mesh>(null);
 
   useFrame(() => {
@@ -17,7 +17,7 @@ const Box: React.FC<Props> = (props: Props) => {
 
   return (
     <>
-      <mesh ref={ref}>
+      <mesh ref={ref} position={position}>
         <boxGeometry />
         <meshStandardMaterial />
       </mesh>
