@@ -1,4 +1,4 @@
-import Gallery from "../../components/template/Gallery";
+import Gallery from '../../components/template/Gallery';
 
 type Props = {};
 
@@ -7,6 +7,6 @@ const GalleryPage: React.FC<Props> = () => {
     <>
       <Gallery></Gallery>
     </>
-  )
-}
+  );
+};
 export default GalleryPage;

@@ -1,14 +1,14 @@
-import React from "react";
-import Work from "../../organisms/Work";
+import React from 'react';
+import Work from '../../organisms/Work';
 
-type Props = {}
+type Props = {};
 
 const Gallery: React.FC<Props> = () => {
   return (
     <>
-      <Work/>
+      <Work />
     </>
   );
-}
+};
 
 export default Gallery;

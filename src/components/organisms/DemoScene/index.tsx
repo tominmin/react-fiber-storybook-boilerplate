@@ -1,13 +1,13 @@
-import { Canvas, Vector3 } from "@react-three/fiber";
+import { Canvas, Vector3 } from '@react-three/fiber';
 
 type Props = {
-  cameraPosition: Vector3,
-  fov?: number,
-  near?: number,
-  far?: number,
-  aspect?: number | undefined,
+  cameraPosition: Vector3;
+  fov?: number;
+  near?: number;
+  far?: number;
+  aspect?: number | undefined;
   children: React.ReactNode;
-}
+};
 
 const DemoScene: React.FC<Props> = ({
   children,
@@ -15,8 +15,8 @@ const DemoScene: React.FC<Props> = ({
   fov = 50,
   near = 0.1,
   far = 2000,
-  aspect
- }) => {
+  aspect,
+}) => {
   return (
     <>
       <div id="canvas-container" style={{ width: '100vw', height: '100vh' }}>
@@ -24,7 +24,7 @@ const DemoScene: React.FC<Props> = ({
           camera={{
             position: cameraPosition,
             fov,
-            aspect: aspect ?? (window.innerWidth / window.innerHeight),
+            aspect: aspect ?? window.innerWidth / window.innerHeight,
             near,
             far,
           }}
@@ -35,9 +35,8 @@ const DemoScene: React.FC<Props> = ({
           {children}
         </Canvas>
       </div>
-
     </>
   );
-}
+};
 
 export default DemoScene;
