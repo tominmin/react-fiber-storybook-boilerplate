@@ -1,8 +1,6 @@
 import Gallery from '../../components/template/Gallery';
 
-type Props = {};
-
-const GalleryPage: React.FC<Props> = () => {
+const GalleryPage: React.FC = () => {
   return (
     <>
       <Gallery></Gallery>

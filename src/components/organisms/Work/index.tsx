@@ -2,9 +2,7 @@ import React from 'react';
 import Box from '../../molecules/Box';
 import DemoScene from '../DemoScene';
 
-type Props = {};
-
-const Work: React.FC<Props> = () => {
+const Work: React.FC = () => {
   return (
     <>
       <DemoScene cameraPosition={[2, 2, 2]}>

@@ -1,6 +1,6 @@
-import { ComponentMeta, ComponentStory } from '@storybook/react';
-import Box from '.';
 import DemoScene from '../../organisms/DemoScene';
+import Box from '.';
+import type { ComponentMeta, ComponentStory } from '@storybook/react';
 
 export default {
   title: 'molecule/Box',

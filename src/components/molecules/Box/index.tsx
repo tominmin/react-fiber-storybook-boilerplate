@@ -1,5 +1,6 @@
-import { useFrame, Vector3 } from '@react-three/fiber';
+import { useFrame } from '@react-three/fiber';
 import { useRef } from 'react';
+import type { Vector3 } from '@react-three/fiber';
 
 type Props = {
   position?: Vector3;

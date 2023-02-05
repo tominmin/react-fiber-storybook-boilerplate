@@ -1,4 +1,5 @@
-import { Canvas, Vector3 } from '@react-three/fiber';
+import { Canvas } from '@react-three/fiber';
+import type { Vector3 } from '@react-three/fiber';
 
 type Props = {
   cameraPosition: Vector3;

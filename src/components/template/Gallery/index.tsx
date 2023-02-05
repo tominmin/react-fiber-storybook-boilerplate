@@ -1,9 +1,7 @@
 import React from 'react';
 import Work from '../../organisms/Work';
 
-type Props = {};
-
-const Gallery: React.FC<Props> = () => {
+const Gallery: React.FC = () => {
   return (
     <>
       <Work />
