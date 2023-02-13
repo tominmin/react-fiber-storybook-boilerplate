@@ -2,7 +2,7 @@ import { Canvas } from '@react-three/fiber';
 import type { Vector3 } from '@react-three/fiber';
 
 type Props = {
-  cameraPosition: Vector3;
+  cameraPosition?: Vector3;
   fov?: number;
   near?: number;
   far?: number;

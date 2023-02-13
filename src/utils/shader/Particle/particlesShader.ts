@@ -3,7 +3,6 @@ export const particlesVertexShader = /* glsl */ `
   uniform sampler2D texturePosition;
   varying vec4 vColor;
   varying vec2 vUv;
-  uniform float cameraConstant;
 
   void main() {
     vec4 posTemp = texture2D(texturePosition, uv);

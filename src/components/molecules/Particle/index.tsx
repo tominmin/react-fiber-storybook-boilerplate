@@ -27,7 +27,6 @@ export const Particles: React.FC = () => {
     texturePosition: { value: null },
     textureVelocity: { value: null },
     resolution: { value: new THREE.Vector2(width, height) },
-    // getCameraConstant: { value: getCameraConstant() },
   };
 
   const matShader = useMemo(() => {
@@ -39,7 +38,6 @@ export const Particles: React.FC = () => {
     });
     mat.extensions.drawBuffers = true;
 
-    mat.name = 'pm1';
     return mat;
   }, []);
 
