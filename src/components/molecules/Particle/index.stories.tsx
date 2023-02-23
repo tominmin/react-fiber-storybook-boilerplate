@@ -1,4 +1,4 @@
-import { Bloom, EffectComposer } from '@react-three/postprocessing';
+// import { Bloom, EffectComposer } from '@react-three/postprocessing';
 
 import * as THREE from 'three';
 
@@ -20,12 +20,12 @@ const Template: ComponentStory<typeof Particles> = () => {
       <DemoScene>
         <directionalLight
           color={new THREE.Color(0xffffff)}
-          position={[1, 1, 1]}
+          position={[2, 2, 2]}
         ></directionalLight>
         <Particles></Particles>
-        <EffectComposer>
-          <Bloom intensity={0.5}></Bloom>
-        </EffectComposer>
+        {/* <EffectComposer>
+          <Bloom intensity={0.1}></Bloom>
+        </EffectComposer> */}
         {/* <axesHelper></axesHelper> */}
       </DemoScene>
     </>

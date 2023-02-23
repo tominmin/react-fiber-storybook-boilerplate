@@ -20,13 +20,8 @@ export const Particles: React.FC = () => {
   // create material
   const uni = {
     time: { type: 'f', value: 1.0 },
-    ambient: {
-      type: 'v4',
-      value: new THREE.Vector4(0.0, 1.0, 0.8, 1.0),
-    },
     texturePosition: { value: null },
     textureVelocity: { value: null },
-    resolution: { value: new THREE.Vector2(width, height) },
   };
 
   const matShader = useMemo(() => {
@@ -60,8 +55,8 @@ export const Particles: React.FC = () => {
 
   // frame loop
   useFrame(() => {
-    camera.position.x = 0.8 * Math.cos(time / 360.0);
-    camera.position.z = 0.8 * Math.sin(time / 360.0);
+    camera.position.x = 4.0 * Math.cos(time / 360.0);
+    camera.position.z = 4.0 * Math.sin(time / 360.0);
     camera.lookAt(0, 0, 0);
 
     simulator.compute(time);

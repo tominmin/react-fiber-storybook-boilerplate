@@ -1,5 +1,4 @@
 export const particlesVertexShader = /* glsl */ `
-  uniform vec2 resolution;
   uniform sampler2D texturePosition;
   varying vec4 vColor;
   varying vec2 vUv;
@@ -10,7 +9,7 @@ export const particlesVertexShader = /* glsl */ `
     vColor = vec4(pos, 1.0);
 
     vec4 mvPosition = modelViewMatrix * vec4(pos, 1.0);
-    gl_PointSize = 1.5;
+    gl_PointSize = 1.3;
     vUv = uv;
     gl_Position = projectionMatrix * mvPosition;
   }
